@@ -10,11 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       uses: actions/checkout@v1
-      -name: 'Install node'
       uses: actions/setup-node@v1
-      -name: 'Install NPM dependencies'
       run: npm Install
-      -name: 'Runb code'
       run: node index.js
       env:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
