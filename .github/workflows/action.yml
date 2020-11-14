@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
-      - run: npm Install
+      - run: npm install
       - run: node index.js
       env:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
